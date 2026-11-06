@@ -1,0 +1,7 @@
+# cached source data (re-fetch with recover_birthdays.py)
+data/
+
+# the original flat table; the build reads the JSON instead, which has term history
+AllHouseReps.csv
+
+__pycache__/

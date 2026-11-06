@@ -1,0 +1,90 @@
+congress,bioguide,name,state,district,party,party_raw
+5,M000013,James Machir,VA,3,Federalist,Federalist
+5,M000336,Blair McClenachan,PA,2,Democratic-Republican,Republican
+5,E000257,Thomas Evans,VA,12,Federalist,Federalist
+5,W000534,Robert Williams,NC,3,Democratic-Republican,Republican
+6,E000257,Thomas Evans,VA,12,Federalist,Federalist
+6,W000534,Robert Williams,NC,3,Democratic-Republican,Republican
+6,S000912,John Stewart,PA,8,Democratic-Republican,Republican
+7,H000986,Narsworthy Hunter,MS,-1,Unrecorded,
+7,W000534,Robert Williams,NC,3,Democratic-Republican,Republican
+7,S000912,John Stewart,PA,8,Democratic-Republican,Republican
+7,H000464,William Helms,NJ,-1,Democratic-Republican,Republican
+8,S000912,John Stewart,PA,6,Democratic-Republican,Republican
+8,W000568,Alexander Wilson,VA,5,Democratic-Republican,Republican
+8,H000464,William Helms,NJ,-1,Democratic-Republican,Republican
+8,B000511,William Blackledge,NC,4,Democratic-Republican,Republican
+9,M000437,Duncan McFarlan,NC,7,Democratic-Republican,Republican
+9,M001005,John Morrow,VA,2,Democratic-Republican,Republican
+9,W000568,Alexander Wilson,VA,5,Democratic-Republican,Republican
+9,H000464,William Helms,NJ,-1,Democratic-Republican,Republican
+9,B000511,William Blackledge,NC,4,Democratic-Republican,Republican
+10,M001005,John Morrow,VA,2,Democratic-Republican,Republican
+10,W000568,Alexander Wilson,VA,5,Democratic-Republican,Republican
+10,H000464,William Helms,NJ,-1,Democratic-Republican,Republican
+10,L000456,John Love,VA,9,Democratic-Republican,Republican
+10,B000511,William Blackledge,NC,4,Democratic-Republican,Republican
+11,B000928,John Brown,MD,7,Democratic-Republican,Republican
+11,H000464,William Helms,NJ,-1,Democratic-Republican,Republican
+11,L000456,John Love,VA,9,Democratic-Republican,Republican
+11,M000750,Pleasant Moorman Miller,TN,2,Democratic-Republican,Republican
+11,S000537,George Smith,PA,5,Democratic-Republican,Republican
+11,H000914,Jacob Hufty,NJ,0,Democratic-Republican,Republican
+12,B000511,William Blackledge,NC,4,Democratic-Republican,Republican
+12,S000537,George Smith,PA,5,Democratic-Republican,Republican
+12,H000914,Jacob Hufty,NJ,0,Democratic-Republican,Republican
+13,B000467,Thomas Bines,NJ,3,Democratic-Republican,Republican
+13,H000372,Joseph H. Hawkins,KY,2,Democratic-Republican,Republican
+13,H000914,Jacob Hufty,NJ,3,Federalist,Federalist
+13,C000510,David Clendenin,OH,6,Democratic-Republican,Republican
+13,J000142,James Johnson,VA,20,Democratic-Republican,Republican
+14,C000510,David Clendenin,OH,6,Democratic-Republican,Republican
+14,M000288,William Mayrant,SC,9,Democratic-Republican,Republican
+14,T000084,John Taylor,SC,7,Democratic-Republican,Republican
+14,W000618,William Wilson,PA,10,Democratic-Republican,Republican
+14,J000142,James Johnson,VA,20,Democratic-Republican,Republican
+14,S000516,Ballard Smith,VA,7,Democratic-Republican,Republican
+15,M001075,George Mumford,NC,10,Democratic-Republican,Republican
+15,W000618,William Wilson,PA,10,Democratic-Republican,Republican
+15,B000583,Andrew Boden,PA,5,Democratic-Republican,Republican
+15,J000142,James Johnson,VA,20,Democratic-Republican,Republican
+15,S000516,Ballard Smith,VA,7,Democratic-Republican,Republican
+15,J000218,Francis Jones,TN,3,Democratic-Republican,Republican
+16,B000583,Andrew Boden,PA,5,Democratic-Republican,Republican
+16,J000142,James Johnson,VA,20,Democratic-Republican,Republican
+16,S000516,Ballard Smith,VA,7,Democratic-Republican,Republican
+16,J000218,Francis Jones,TN,3,Democratic-Republican,Republican
+16,N000018,Raphael Neale,MD,1,Federalist,Federalist
+17,B001054,Wingfield Bullock,KY,-1,Democratic-Republican,Republican
+17,J000218,Francis Jones,TN,3,Democratic-Republican,Republican
+17,P000310,John Phillips,PA,3,Federalist,Federalist
+17,N000018,Raphael Neale,MD,1,Federalist,Federalist
+17,S000626,William Smith,VA,7,Democratic-Republican,Republican
+18,C000049,Jacob Call,IN,1,Democratic,Jackson Republican
+18,E000025,Lewis Eaton,NY,12,Democratic-Republican,Crawford Republican
+18,N000018,Raphael Neale,MD,1,Unrecorded,
+18,S000040,James T. Sandford,TN,6,Democratic,Jackson Republican
+18,S000626,William Smith,VA,21,Unrecorded,
+18,M000722,Daniel H. Miller,PA,3,Democratic,Jacksonian
+18,C000098,Robert Blair Campbell,SC,3,Democratic,Jackson Republican
+19,S000626,William Smith,VA,21,Democratic,Jackson
+19,M000722,Daniel H. Miller,PA,3,Democratic,Jackson
+19,T000365,James Trezvant,VA,2,Democratic,Jackson
+20,M000722,Daniel H. Miller,PA,3,Democratic,Jackson
+20,T000365,James Trezvant,VA,2,Democratic,Jackson
+21,M000722,Daniel H. Miller,PA,3,Democratic,Jackson
+21,T000365,James Trezvant,VA,2,Democratic,Jackson
+22,M000375,Robert McCoy,PA,11,Democratic,Jackson
+23,S000233,Dudley Selden,NY,3,Democratic,Jackson
+23,S000446,Thomas Day Singleton,SC,-1,Other,Nullifier
+23,C000098,Robert Blair Campbell,SC,3,Other,Nullifier
+23,F000273,John B. Forester,TN,5,Democratic,Jackson
+24,C000098,Robert Blair Campbell,SC,3,Other,Nullifier
+24,F000273,John B. Forester,TN,5,Whig,Anti-Jacksonian
+25,H000993,William H. Hunter,OH,14,Democratic,Democrat
+26,G000423,Willis Green,KY,6,Whig,Whig
+27,G000423,Willis Green,KY,6,Whig,Whig
+28,G000423,Willis Green,KY,2,Whig,Whig
+29,L000230,Owen D. Leib,PA,11,Democratic,Democrat
+31,P000369,Charles Wesley Pitman,PA,14,Whig,Whig
+32,F000363,John D. Freeman,MS,3,Other,Unionist

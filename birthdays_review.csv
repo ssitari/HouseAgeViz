@@ -1,0 +1,123 @@
+status,bioguide,name,first_house_term,state,chosen_date,precision,age_at_first_term,reason,directory_says,voteview_year,wikidata_values,wikidata_id
+upstream_suspect,C000382,Gabriel Christie,1793-12-02,MD,1755-01-01,year,18,congress-legislators date 1775-09-12 implies age 18 at first term; use_directory,"born in Perryman, Harford County, Md., in 1755",1755,,Q2120012
+upstream_suspect,H000464,William Helms,1801-12-07,NJ,,as published,18,congress-legislators date 1783-09-30 implies age 18 at first term; treat_undated,"born in Sussex County, N.J, birth date unknown; served during the Revolutionary War as second lieutenant, first lieutenant, and captain, and was brevetted major on September 30, 1783",,,Q604143
+upstream_suspect,S000598,O’Brien Smith,1805-12-02,SC,1756-01-01,year,21,congress-legislators date 1784-07-31 implies age 21 at first term; use_directory,born in Ireland about 1756,1756,,Q1606683
+upstream_suspect,M000288,William Mayrant,1815-12-04,SC,,as published,-1,congress-legislators date 1816-10-21 implies age -1 at first term; treat_undated,"born in South Carolina, birth date unknown; elected as a Republican to the Fourteenth Congress and served until his resignation on October 21, 1816 (March 4, 1815-October 21, 1816)",,,Q2579902
+upstream_suspect,C000792,Jeremiah Cosden,1821-12-03,MD,1768-01-01,year,0,congress-legislators date 1821-03-04 implies age 0 at first term; use_directory,born in 1768,1768,,Q2183134
+upstream_suspect,V000044,Espy Van Horne,1825-12-05,PA,1795-01-01,year,0,congress-legislators date 1825-03-04 implies age 0 at first term; use_directory,"born in Lycoming County, Pa., in 1795",1795,,Q5399194
+conflict,N000055,Joseph Neville,1793-12-02,VA,1730-01-01,year,63,sources differ; majority used,born in 1730,1730,1733-12-02/p11,Q1707698
+conflict,N000084,John Nicholas,1793-12-02,VA,1757-01-01,year,36,sources differ; majority used,"born in Williamsburg, Va., about 1757",1757,1764-01-19/p11,Q1701213
+conflict,S000508,John Smilie,1793-12-02,PA,1741-01-01,year,52,sources differ; majority used,born in Ireland in 1741,1741,1742-09-16/p11,Q6258236
+conflict,S001095,John Swanwick,1795-12-07,PA,1740-01-01,year,55,sources differ; majority used,born in 1740,1760,1740-01-01/p9,Q13219839
+conflict,S000752,Richard Jr. Sprigg,1795-12-07,MD,1769-01-01,year,26,sources differ; majority used,"born in Prince Georges County, Md., in 1769c",1769,1760-01-01/p9,Q576826
+conflict,H000140,Wade Hampton,1795-12-07,SC,1752-01-01,year,43,sources differ; majority used,born in Virginia in 1752,1752,1754-01-01/p9,Q266695
+conflict,F000322,John Fowler,1797-05-15,KY,1755-01-01,year,42,sources differ; majority used,born in Virginia in 1755,1755,1756-04-27/p11,Q1700097
+conflict,C000976,John Culpepper,1807-10-26,NC,1761-01-01,year,46,sources differ; majority used,"born near Wadesboro, Anson County, N.C., in 1761",1761,1765-04-10/p11,Q1333684
+conflict,F000036,Samuel Farrow,1813-05-24,SC,1759-01-01,year,54,sources differ; majority used,born in Virginia in 1759,1759,1762-06-08/p11,Q2218231
+conflict,S000295,Solomon P. Sharp,1813-05-24,KY,1780-01-01,year,33,sources differ; majority used,"born in Abingdon, Washington County, Va., in 1780",1780,1787-08-22/p11,Q126644
+conflict,T000132,William Terrell,1817-12-01,GA,1778-01-01,year,39,sources differ; majority used,"born in Fairfax County, Va., in 1778",1778,1788-01-01/p9,Q2580742
+conflict,M000853,Robert Monell,1819-12-06,NY,1786-01-01,year,33,sources differ; majority used,"born in Columbia County, N.Y., in 1786",1786,1787-04-25/p11,Q2947126
+conflict,T000290,John Tod,1821-12-03,PA,1779-01-01,year,42,sources differ; majority used,"born in Hartford, Conn., in 1779",1780,1779-01-01/p9,Q6260945
+conflict,W000712,David Woodcock,1821-12-03,NY,1785-01-01,year,36,sources differ; majority used,"born in Williamstown, Berkshire County, Mass., in 1785",1785,1784-08-29/p11,Q5241281
+conflict,B000526,James Blair,1821-12-03,SC,1790-01-01,year,31,sources differ; majority used,"born in the Waxhaw settlement, Lancaster County, S.C., about 1790",1790,1786-09-26/p11,Q1680040
+conflict,H000387,Moses Hayden,1823-12-01,NY,1786-01-01,year,37,sources differ; majority used,"born near Westfield, Hampden County, Mass., in 1786",1786,1785-06-01/p10,Q6915813
+conflict,S000789,James Israel Standifer,1823-12-01,TN,1782-01-01,year,41,sources differ; majority used,"born in Virginia, probably in 1782",1782,1779-09-10/p11,Q1680606
+conflict,C000043,John Calhoon,1827-12-03,KY,1797-01-01,year,30,sources differ; majority used,"born in Henry County, Ky., in 1797",1797,1793-04-13/p11,Q1664334
+conflict,P000467,Robert Potter,1829-12-07,NC,1800-01-01,year,29,sources differ; majority used,"born in Granville County, near Williamsboro, N.C., about 1800",1800,1799-06-01/p10,Q1527279
+conflict,B001073,George Burd,1831-12-05,PA,1793-01-01,year,38,sources differ; majority used,born in 1793,1793,1788-00-00/p9,Q5537422
+conflict,M000489,James Iver McKay,1831-12-05,NC,1793-01-01,year,38,sources differ; majority used,"born near Elizabethtown, Bladen County, N.C., in 1793",1792,1793-01-01/p9,Q1358019
+conflict,K000174,Daniel Kilgore,1833-12-02,OH,1793-01-01,year,40,sources differ; majority used,"born at Kings Creek, Va. (now West Virginia), in 1793",1794,1793-01-01/p9,Q1161348
+conflict,H000861,Elias Howell,1835-12-07,OH,1792-01-01,year,43,sources differ; majority used,born in New Jersey in 1792,1792,1785-08-17/p11,Q5360523
+conflict,T000272,Joseph Leonard Tillinghast,1837-09-04,RI,1791-01-01,year,46,sources differ; majority used,"born in Taunton, Mass., in 1791",1791,1790-05-18/p11,Q1707460
+conflict,S000359,Benjamin Glover Shields,1841-05-31,AL,1808-01-01,year,33,sources differ; majority used,"born in Abbeville, S.C., in 1808",1811,1808-01-01/p9,Q764548
+conflict,R000069,George Oscar Rathbun,1843-12-04,NY,1803-01-01,year,40,sources differ; majority used,"born in Scipioville, near Auburn, N.Y., in 1803",1803,1802-10-16/p11,Q5542987
+conflict,S000139,John Lawrence Schoolcraft,1849-12-03,NY,1804-01-01,year,45,sources differ; majority used,"born in Albany, N.Y., in 1804",1804,1806-09-22/p11,Q2592917
+conflict,A000012,James Abercrombie,1851-12-01,AL,1795-01-01,year,56,sources differ; majority used,"born in Hancock County, Ga., in 1795",1795,1792-02-18/p11,Q1679917
+conflict,H000799,Thomas Raymond Horton,1855-12-03,NY,1822-04-01,month,33,sources differ; majority used,"born in Fultonville, Montgomery County, N.Y., in April 1822",1822,1823-04-18/p11,Q3953120
+weak,D000157,William Johnson Dawson,1793-12-02,NC,1765-01-01,year,28,one source only,"born near Edenton, Chowan County, N.C., birth date unknown; member of the State house of commons, 1791",,1765-00-00/p9,Q2579535
+weak,H000982,John Hunter,1793-12-02,SC,1752-01-01,year,41,one source only,born in South Carolina in either 1732 or 1760,,1752-00-00/p9,Q431881
+weak,D000138,Thomas Terry Davis,1797-05-15,KY,1758-01-01,year,39,one source only,"born in Kentucky, birth date unknown; studied law",,1758-01-01/p9,Q2427593
+weak,C000408,William Charles Cole Claiborne,1797-05-15,TN,1775-08-13,day,22,under 25 at first term,"born in Sussex County, Va., in 1775",1775,1775-08-13/p11,Q878789
+weak,J000227,James Jones,1799-12-02,GA,1769-01-01,year,30,one source only,"born in Maryland, birth date unknown; moved to Georgia with his uncle, Colonel Marbury, in 1740",,1769-01-01/p9,Q613651
+weak,L000294,Thomas Lewis,1803-10-17,VA,1760-01-26,day,43,one source only,"born in Augusta County, Va., birth date unknown; attended the common schools",,1760-01-26/p11,Q1311499
+weak,W000116,Matthew Walton,1803-10-17,KY,1750-01-01,year,53,one source only,birth date unknown; received a limited schooling,,1750-00-00/p9,Q1909622
+weak,P000443,John Porter,1805-12-02,PA,1760-06-18,day,45,one source only,"born in Pennsylvania, birth date unknown; received a limited schooling",,1760-06-18/p11,Q6253201
+weak,S000610,Samuel Smith,1805-12-02,PA,1780-01-01,year,25,one source only,"birth date unknown; associate judge of Erie County, Pa., 1803-1805, when he resigned",,1780-00-00/p9,Q7412661
+weak,V000043,Archibald Van Horne,1807-10-26,MD,1758-01-01,year,49,one source only,"birth date unknown; appointed adjutant of the Fourteenth Regiment of the Maryland Militia, April 18, 1798",,1758-00-00/p9,Q576768
+weak,D000240,William Denning,1809-05-22,NY,1740-04-01,month,69,one source only,[no match: service dates not in entry],,1740-04-00/p10,Q82219
+weak,M000520,William McKinley,1809-05-22,VA,1762-01-01,year,47,one source only,"born in Virginia, birth date unknown; completed preparatory studies",,1762-00-00/p9,Q2579944
+weak,S001125,Jacob Swoope,1809-05-22,VA,1766-10-09,day,43,one source only,"born in Philadelphia, Pa., birth date unknown; attended the common schools",,1766-10-09/p11,Q174159
+weak,B000067,John Baker,1811-11-04,VA,1769-01-01,year,42,one source only,"born in Frederick County, Md., birth dates unknown; attended Washington College (now Washington and Lee University), Lexington, Va., for three years",,1769-01-01/p9,Q1699238
+weak,M000377,William McCoy,1811-11-04,VA,1768-01-01,year,43,one source only,"born near Warrenton, Fauquier County, Va., birth date unknown; member of the State house of delegates 1798-1804",,1768-01-01/p9,Q2579923
+weak,H000254,Thomas K. Harris,1813-05-24,TN,1777-01-01,year,36,one source only,birth date unknown; studied law,,1777-01-01/p9,Q2425253
+weak,W000367,Francis White,1813-05-24,VA,1761-01-01,year,52,one source only,"born near Winchester, Frederick County, Va., birth date unknown; attended the common schools at Winchester",,1761-01-01/p9,Q282480
+weak,S000862,Benjamin Stephenson,1813-05-24,IL,1769-07-08,day,44,one source only,"born in Kentucky, birth date unknown; moved to Illinois Territory in 1809 and settled in Randolph County",,1769-07-08/p11,Q817696
+weak,D000306,Samuel Dickens,1815-12-04,NC,1775-01-01,year,40,one source only,"born near Roxboro, Person County, N.C., birth date unknown; pursued an academic course",,1775-01-01/p9,Q181763
+weak,W000733,William Woodward,1815-12-04,SC,1762-10-07,day,53,one source only,"birth date unknown; member, State house of representatives, 18181823",,1762-10-07/p11,Q2581116
+weak,N000049,Wilson Nesbitt,1817-12-01,SC,1781-01-01,year,36,one source only,"birth date unknown; resided in Spartanburg, Spartanburg County, S.C.",,1781-01-01/p9,Q2582604
+weak,W000048,David Walker,1817-12-01,KY,1763-04-13,day,54,one source only,"born in Brunswick County, Va., birth date unknown; attended public and private schools",,1763-04-13/p11,Q1177051
+weak,M000920,Thomas Love Moore,1819-12-06,VA,1789-01-01,year,30,one source only,"born near Charles Town, Jefferson County, Va. (now West Virginia), birth date unknown; pursued an academic course",,1789-01-01/p9,Q2425661
+weak,B000786,James Douglas Breckinridge,1821-12-03,KY,1781-01-01,year,40,one source only,"born in Woodville, near Louisville, Jefferson County, Ky., birth date unknown; attended Washington College (now Washington and Lee University), Lexington, Va., 1800-1803",,1781-01-01/p9,Q1680234
+weak,D000531,James Duncan,1821-12-03,PA,1756-01-01,year,65,one source only,[no match: service dates not in entry],,1756-01-01/p9,Q6132921
+weak,P000131,Walter Patterson,1821-12-03,NY,1780-01-01,year,41,one source only,"born in Columbia County, N.Y., birth date unknown; completed preparatory studies",,1780-00-00/p9,Q774546
+weak,M000586,Archibald McNeill,1821-12-03,NC,1771-03-11,day,50,one source only,"born in Moore County, N.C.",,1771-03-11/p11,Q633356
+weak,I000045,Jacob C. Isacks,1823-12-01,TN,1767-01-01,year,56,one source only,"born in Montgomery County, Pa., birth date unknown; moved to Winchester, Tenn.",,1767-01-01/p11,Q1677442
+weak,H000634,Richard Hines,1825-12-05,NC,1792-06-25,day,33,one source only,"born in Tarboro, Edgecombe County, N.C., birth date unknown; studied law",,1792-06-25/p11,Q1289184
+weak,D000079,Thomas Davenport,1825-12-05,VA,1778-01-01,year,47,one source only,"born in Cumberland County, Va.",,1778-01-01/p9,Q2423372
+weak,C000333,Samuel Chase,1827-12-03,NY,1789-01-01,year,38,one source only,"born in Cooperstown, N.Y., birth date unknown; district attorney of Otsego County, 1821-1829",,1789-01-01/p9,Q2514354
+weak,M000285,John Maynard,1827-12-03,NY,1786-01-08,day,41,one source only,"born in Whitestone, N.Y., birth date unknown; was graduated from Union College, Schenectady, N.Y., 1810",,1786-01-08/p11,Q6247332
+weak,C000090,John Campbell,1829-12-07,SC,1799-10-13,day,30,one source only,"born near Brownsville, Marlboro County, S.C., birth date unknown; was graduated from South Carolina College (now the University of South Carolina) at Columbia in 1819",,1799-10-13/p11,Q1699536
+weak,C000018,Harry Cage,1833-12-02,MS,1795-05-05,day,38,one source only,"born at Cages Bend of the Cumberland River, Sumner County, Tenn., birth date unknown; moved to Wilkinson County, Miss., in early youth",,1795-05-05/p11,Q1250644
+weak,F000423,John Hall Fulton,1833-12-02,VA,1792-01-01,year,41,one source only,"born in Augusta County, Va., birth date unknown; attended the common schools and was graduated from Hampden-Sidney College, HampdenSidney, Va.",,1792-01-01/p9,Q167965
+weak,T000105,William Penn Taylor,1833-12-02,VA,1791-01-01,year,42,one source only,"born in Fredericksburg, Spotsylvania County, Va., birth date unknown; received a limited schooling",,1791-01-01/p9,Q225991
+weak,D000328,David Dickson,1835-12-07,MS,1794-03-22,day,41,one source only,"born in Georgia, birth date unknown; moved to Mississippi",,1794-03-22/p11,Q1174227
+weak,D000472,Charles Downing,1837-09-04,FL,1797-01-01,year,40,one source only,"born in Virginia, birth date unknown; studied law",,1797-00-00/p9,Q1064151
+weak,K000087,Thomas Kempshall,1839-12-02,NY,1796-01-01,year,43,one source only,born in England about 1796,,1796/p8,Q7791478
+weak,W000382,Joseph Livingston White,1841-05-31,IN,1813-01-01,year,28,one source only,"born in Cherry Valley, Otsego County, N.Y., birth date unknown; completed preparatory studies",,1813-00-00/p9,Q1707461
+weak,H000005,Thomas C. Hackett,1849-12-03,GA,1798-01-01,year,51,one source only,"born in Georgia, birth date unknown; attended the common schools",,1798-00-00/p9,Q1510674
+weak,C000326,George William Chase,1853-12-05,NY,1802-01-01,year,51,one source only,"born in the town of Maryland, Otsego County, N.Y., birth date unknown; attended the common schools",,1802-01-01/p9,Q5545562
+weak,C000981,Thomas William Cumming,1853-12-05,NY,1814-01-01,year,39,one source only,"born in Frederick, Md., in 1814 or 1815",,1814-00-00/p9,Q198295
+rejected,H000914,Jacob Hufty,1809-05-22,NJ,,,,Voteview-only year; directory says unknown,"born in New Jersey, birth date unknown; was a blacksmith by trade",1750,1800/p7,Q1677523
+rejected,J000218,Francis Jones,1817-12-01,TN,,,,Voteview-only year; directory says unknown,birth date unknown; received a limited schooling,1788,1800/p7,Q1441590
+rejected,G000423,Willis Green,1839-12-02,KY,,,,Voteview-only year; directory says unknown,born in the Shenandoah Valley of Virginia; birth date unknown,1818,1800/p7,Q2581545
+unrecovered,M000013,James Machir,1797-05-15,VA,,,,no source gives a year,"born in Virginia, birth date unknown; member of the State house of delegates, 1793-1796",,1750/p7,Q1680754
+unrecovered,M000336,Blair McClenachan,1797-05-15,PA,,,,sources split and directory silent,"born in Ireland, birth date unknown; immigrated to the United States at an early age and settled in Philadelphia, Pa.",1735,1751-00-00/p9,Q4924141
+unrecovered,E000257,Thomas Evans,1797-05-15,VA,,,,no source gives a year,"born in Accomac County, Va.",,1800/p7,Q2423731
+unrecovered,W000534,Robert Williams,1797-05-15,NC,,,,sources split and directory silent,born in 1768 or 1773,1768,1773-07-12/p11,Q2159211
+unrecovered,S000912,John Stewart,1799-12-02,PA,,,,no source gives a year,birth date unknown; completed preparatory studies,,1800/p7,Q13219831
+unrecovered,H000986,Narsworthy Hunter,1801-12-07,MS,,,,no source gives a year,"born in Virginia, birth date unknown; captain in the militia organization of the district formed, 1793",,1800/p7,Q1965415
+unrecovered,W000568,Alexander Wilson,1803-10-17,VA,,,,no source gives a year,"born in Virginia, birth date unknown; completed preparatory studies",,1800/p7,Q1535167
+unrecovered,B000511,William Blackledge,1803-10-17,NC,,,,no source gives a year,"born in Craven County, N.C., birth date unknown; member of the State house of commons, 1797-1799 and again in 1809",,1800/p7,Q1667470
+unrecovered,M000437,Duncan McFarlan,1805-12-02,NC,,,,no source gives a year,"born at Laurel Hill, Scotland County, N.C., birth date unknown; attended the common schools",,1800/p7,Q1265433
+unrecovered,M001005,John Morrow,1805-12-02,VA,,,,no source gives a year,"birth date unknown; elected as a Republican to the Ninth and Tenth Congresses (March 4, 1805-March 3, 1809)",,1800/p7,Q962532
+unrecovered,L000456,John Love,1807-10-26,VA,,,,no source gives a year,birth date unknown; pursued an academic course,,1800/p7,Q1283387
+unrecovered,B000928,John Brown,1809-05-22,MD,,,,no source gives a year,"birth date unknown; member of the State house of delegates, 1807-1808",,1760/p8,Q2655573
+unrecovered,M000750,Pleasant Moorman Miller,1809-05-22,TN,,,,no source gives a year,"born in Lynchburg, Campbell County, Va., birth date unknown; moved to Rogersville, Hawkins County, Tenn., in 1796, and thence to Knoxville, Knox County, Tenn., 1800",,1800/p7,Q247625
+unrecovered,S000537,George Smith,1809-05-22,PA,,,,no source gives a year,"birth date unknown; elected as a Republican to the Eleventh and Twelfth Congresses (March 4, 1809-March 3, 1813)",,1800/p7,Q5544628
+unrecovered,H000372,Joseph H. Hawkins,1813-05-24,KY,,,,no source gives a year,"born in Lexington, Ky, birth date unknown; pursued an academic course",,1800/p7,Q1707157
+unrecovered,C000510,David Clendenin,1813-05-24,OH,,,,sources split and directory silent,"moved from Harford County, Md., to near Struthers in the Mahoning Valley, Ohio, about 1806; was a pioneer in the iron an",1779,1790-00-00/p9,Q5232419
+unrecovered,J000142,James Johnson,1813-05-24,VA,,,,no source gives a year,"born in Virginia, birth date unknown; completed preparatory studies",,1800/p7,Q194720
+unrecovered,B000467,Thomas Bines,1814-10-11,NJ,,,,no source gives a year,"born in Trenton, N.J., birth date unknown; attended the common schools",,1800/p7,Q1570342
+unrecovered,T000084,John Taylor,1815-12-04,SC,,,,no source gives a year,"birth date unknown; member of the South Carolina state house of representatives, 1802-1805",,1800/p7,Q1701901
+unrecovered,W000618,William Wilson,1815-12-04,PA,,,,no source gives a year,"birth date unknown; elected as a Republican to the Four- 2184 teenth and Fifteenth Congresses (March 4, 1815-March 3, 1819)",,1800/p7,Q8020438
+unrecovered,S000516,Ballard Smith,1815-12-04,VA,,,,no source gives a year,"born in Hanover County, Va., birth date unknown; served as lieu- 1926 tenant in the Army during the Revolutionary War",,1800/p7,Q765182
+unrecovered,M001075,George Mumford,1817-12-01,NC,,,,no source gives a year,"born in Rowan County, N.C., birth date unknown; attended the common schools",,1800/p7,Q265085
+unrecovered,B000583,Andrew Boden,1817-12-01,PA,,,,no source gives a year,"born in Carlisle, Cumberland County, Pa., birth date unknown; attended the public schools",,1800/p7,Q4756377
+unrecovered,N000018,Raphael Neale,1819-12-06,MD,,,,no source gives a year,"born in St. Marys County, Md., birth date unknown; resided in Leonardtown",,1800/p7,Q250676
+unrecovered,B001054,Wingfield Bullock,1821-12-03,KY,,,,no source gives a year,"born in Spotsylvania, Va., birth date unknown; studied law",,1800/p7,Q2584413
+unrecovered,P000310,John Phillips,1821-12-03,PA,,,,no source gives a year,"was born in Chester County, Pa., birth date unknown; received a limited schooling",,1800/p7,Q6252831
+unrecovered,S000626,William Smith,1821-12-03,VA,,,,no source gives a year,"born in Chesterfield, Va., birth date unknown; completed preparatory studies",,1800/p7,Q2580582
+unrecovered,C000049,Jacob Call,1823-12-01,IN,,,,no source gives a year,"born in Kentucky, birth date unknown; was graduated from an academy in Kentucky",,1800/p7,Q1677445
+unrecovered,E000025,Lewis Eaton,1823-12-01,NY,,,,sources split and directory silent,"born in New York, birth date unknown; sheriff of Schenectady County, 1821 and 1822",1789,1790-02-17/p11,Q6536516
+unrecovered,S000040,James T. Sandford,1823-12-01,TN,,,,no source gives a year,"born in Virginia, birth date unknown; attended the common schools",,1800/p7,Q1284753
+unrecovered,M000722,Daniel H. Miller,1823-12-01,PA,,,,no source gives a year,"born in Philadelphia, Pa., birth date unknown; elected to the Eighteenth Congress",,1800/p7,Q5217385
+unrecovered,C000098,Robert Blair Campbell,1823-12-01,SC,,,,sources split and directory silent,"born in Marlboro County, S.C., birth date unknown; educated by a private tutor",1791,1787-01-01/p9,Q1394430
+unrecovered,T000365,James Trezvant,1825-12-05,VA,,,,no source gives a year,"born in Sussex County, Va., birth date unknown; completed preparatory studies",,1800/p7,Q598873
+unrecovered,M000375,Robert McCoy,1831-12-05,PA,,,,no source gives a year,"born in Carlisle, Pa., birth date unknown; attended the common schools",,1800/p7,Q7347485
+unrecovered,S000233,Dudley Selden,1833-12-02,NY,,,,sources split and directory silent,"was graduated from Union College, Schenectady, N.Y., in 1819; studied law",1797,1794-01-01/p9,Q336857
+unrecovered,S000446,Thomas Day Singleton,1833-12-02,SC,,,,no source gives a year,"born near Kingstree, S.C., birth date unknown; attended the common schools",,,Q2423319
+unrecovered,F000273,John B. Forester,1833-12-02,TN,,,,no source gives a year,"born in McMinnville, Warren County, Tenn., birth date unknown; received a limited schooling",,1785/p8,Q1699203
+unrecovered,H000993,William H. Hunter,1837-09-04,OH,,,,no source gives a year,"born in Frankfort, Franklin County, Ky., birth date unknown; completed preparatory studies",,,Q8010455
+unrecovered,L000230,Owen D. Leib,1845-12-01,PA,,,,no source gives a year,"born in Pennsylvania, birth date unknown; pursued classical studies",,,Q7114444
+unrecovered,P000369,Charles Wesley Pitman,1849-12-03,PA,,,,no source gives a year,"born in New Jersey, birth date unknown; attended the common schools",,1815/p8,Q5083461
+unrecovered,F000363,John D. Freeman,1851-12-01,MS,,,,no source gives a year,"born in Cooperstown, N.Y., birth date unknown; attended the common schools",,1816/p7,Q1415627

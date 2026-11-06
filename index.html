@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Age of the U.S. House, 1789–2025</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #fff;
+      height: 100vh;
+      height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      color: #222;
+    }
+
+    /* ── Header: what this is, with the controls in one row beside it ── */
+    #page-head {
+      flex-shrink: 0;
+      display: flex; flex-wrap: wrap; align-items: flex-end; gap: 8px 24px;
+      padding: 14px 24px 8px 50px;
+    }
+    #titles { flex: 1 1 380px; min-width: 0; }
+    h1 { font-size: 19px; font-weight: 600; letter-spacing: -0.01em; color: #1a1a1a; }
+    #deck { font-size: 13px; color: #555; margin-top: 3px; }
+
+    #controls { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+    #controls label {
+      font-size: 11px; color: #77756e;
+      display: flex; align-items: center; gap: 4px; white-space: nowrap;
+    }
+    #controls select {
+      font-family: inherit; font-size: 12px; color: #333;
+      border: none; background: none; padding: 1px 2px;
+      border-bottom: 1px solid #ccc; border-radius: 0;
+      cursor: pointer;
+    }
+    #controls select:hover { border-bottom-color: #888; }
+    #controls select:focus-visible { outline: 2px solid #2f4f75; outline-offset: 1px; }
+
+    /* ── Panels ── */
+    #main { flex: 1; display: flex; flex-direction: column; min-height: 0; }
+
+    /* The svg is taken out of flow so it can never feed back into the height
+       the flexbox gives this panel. */
+    #line { flex: 1 1 0; min-height: 170px; position: relative; outline-offset: -2px; }
+    #line svg { position: absolute; inset: 0; display: block; touch-action: none; }
+    #line:focus-visible { outline: 1px solid #2f4f75; }
+
+    #selection-head {
+      flex-shrink: 0;
+      display: flex; align-items: baseline; flex-wrap: wrap; gap: 2px 8px;
+      padding: 6px 24px 0 50px;
+      border-top: 0.5px solid #eee;
+    }
+    #stepper { display: inline-flex; gap: 2px; align-self: center; }
+    #stepper button {
+      font: inherit; font-size: 13px; line-height: 1; color: #444;
+      width: 24px; height: 22px;
+      background: #fff; border: 0.5px solid #ccc; border-radius: 3px;
+      cursor: pointer;
+    }
+    #stepper button:hover:not(:disabled) { background: #f4f3f0; }
+    #stepper button:disabled { color: #ccc; cursor: default; }
+    #stepper button:focus-visible { outline: 2px solid #2f4f75; outline-offset: 1px; }
+    /* One line, whatever the names: if this wrapped for some Congresses and not
+       others, the charts would change size while stepping through them. */
+    #readout {
+      flex: 1 1 0; min-width: 0;
+      font-size: 13px; color: #555; font-variant-numeric: tabular-nums;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    #readout b { color: #1a1a1a; font-weight: 600; }
+
+    /* The notes sit over the histogram's empty upper right, which is empty in
+       exactly the early Congresses they apply to. In flow, they would resize the
+       line chart under the pointer on every step through a Congress with a note. */
+    #lower { flex: 0 0 auto; position: relative; }
+    #notes {
+      position: absolute; z-index: 2; pointer-events: none;
+      top: 34px; right: 24px; width: min(330px, 34%);
+      text-align: right;
+    }
+    .note { font-size: 11px; line-height: 1.35; color: #77756e; margin-bottom: 4px; }
+    .note.warn { color: #a05a1e; }
+    body.table-view #notes { position: static; width: auto; padding: 4px 24px 0 50px; text-align: left; }
+
+    #hist { position: relative; }
+    #hist svg { display: block; }
+
+    /* ── Chart ink ── */
+    .axis-line { stroke: #c9c7c2; stroke-width: 1; shape-rendering: crispEdges; }
+    .rule { stroke: #eeedea; stroke-width: 1; shape-rendering: crispEdges; }
+    .tick-mark { stroke: #d4d2ce; stroke-width: 1; shape-rendering: crispEdges; }
+    .tick-label { font-size: 10px; fill: #77756e; }
+    .axis-title { font-size: 11px; fill: #666; }
+    .band-label { font-size: 10.5px; fill: #5c5a54; }
+    .band-label.strong { font-weight: 600; fill: #2b2a27; }
+    .annot {
+      font-size: 11px; fill: #55534d;
+      paint-order: stroke fill; stroke: #fff; stroke-width: 3px; stroke-linejoin: round;
+    }
+    .annot.strong { font-weight: 600; fill: #1a1a1a; }
+    .dot-ring { fill: none; stroke-width: 1.75; }
+
+    /* ── Table view ── */
+    #table-wrap { flex: 0 0 auto; overflow: auto; background: #fff; display: none; border-top: 0.5px solid #eee; margin-top: 6px; }
+    table { border-collapse: collapse; font-size: 12px; width: 100%; }
+    th, td { text-align: left; padding: 4px 12px; border-bottom: 0.5px solid #eee; white-space: nowrap; }
+    th {
+      position: sticky; top: 0; background: #fafafa;
+      font-size: 11px; font-weight: 600; color: #555; border-bottom: 0.5px solid #ddd;
+    }
+    td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+    .swatch { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 6px; }
+
+    /* ── Legend ── */
+    #footer {
+      display: flex; align-items: center; gap: 18px;
+      padding: 5px 24px 5px 50px;
+      background: #fff; border-top: 0.5px solid #eee; flex-shrink: 0;
+    }
+    #party-key { display: flex; gap: 4px 12px; align-items: center; flex-wrap: wrap; flex: 1; min-width: 0; }
+    .key-item { display: flex; align-items: center; font-size: 11.5px; color: #444; }
+    .key-item.is-out { opacity: 0.35; }
+    #key-note { font-size: 11px; color: #77756e; }
+
+    /* ── Tooltip ── */
+    #tooltip {
+      position: fixed; display: none; pointer-events: none;
+      background: rgba(255,255,255,0.98);
+      border: 0.5px solid #ccc; border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.13);
+      padding: 8px 10px; font-size: 11.5px; line-height: 1.45;
+      max-width: 300px; z-index: 500;
+    }
+    .tt-name { font-weight: 600; font-size: 12.5px; }
+    .tt-sub { color: #777; font-size: 10.5px; margin-bottom: 4px; }
+    .tt-stat b { font-variant-numeric: tabular-nums; }
+    .tt-meta { color: #77756e; font-size: 10.5px; margin-top: 4px; }
+
+    #loading {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 12px; color: #77756e; background: #fff;
+    }
+    #loading.err { color: #b3261e; padding: 0 40px; text-align: center; line-height: 1.5; }
+
+    /* Last flex child of a 100vh column layout, so it can't be clipped. */
+    .page-credit {
+      flex: 0 0 auto; padding: 4px 24px 6px 50px; background: #fff;
+      font: 11px/1.35 -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: #78766f; border-top: 1px solid #eceae5;
+    }
+    .page-credit a { color: #52514e; }
+
+    @media (max-width: 1080px) { #key-note { display: none; } }
+    @media (max-width: 700px) {
+      #page-head, #selection-head, #footer, .page-credit { padding-left: 14px; padding-right: 14px; }
+      #notes, body.table-view #notes { position: static; width: auto; padding: 4px 14px 0; text-align: left; }
+      h1 { font-size: 17px; }
+      #readout { flex-basis: 100%; white-space: normal; min-height: 3.9em; }
+    }
+  </style>
+</head>
+<body>
+
+  <header id="page-head">
+    <div id="titles">
+      <h1>Age of the U.S. House, 1789–2025</h1>
+      <p id="deck">Everyone who served in each Congress, non-voting delegates included, at their age the day it convened</p>
+    </div>
+    <div id="controls">
+      <label>Line chart
+        <select id="line-mode">
+          <option value="chamber">whole House</option>
+          <option value="party">by party</option>
+        </select>
+      </label>
+      <label>Compare dots with
+        <select id="baseline">
+          <option value="all">all Congresses</option>
+          <option value="prior">the 20 before</option>
+        </select>
+      </label>
+      <label>Members as
+        <select id="view">
+          <option value="chart">dots</option>
+          <option value="table">table</option>
+        </select>
+      </label>
+    </div>
+  </header>
+
+  <div id="main">
+    <div id="line" tabindex="0" role="application"
+         aria-label="Age of House members by Congress. Left and right arrow keys choose a Congress.">
+      <svg id="line-svg"></svg>
+      <div id="loading">Loading…</div>
+    </div>
+    <div id="selection-head">
+      <span id="stepper">
+        <button id="prev" type="button" aria-label="Previous Congress">‹</button>
+        <button id="next" type="button" aria-label="Next Congress">›</button>
+      </span>
+      <p id="readout" aria-live="polite"></p>
+    </div>
+    <div id="lower">
+      <div id="notes"></div>
+      <div id="hist"><svg id="hist-svg" role="img" aria-label="Dot plot of members' ages in the selected Congress. The same figures are available in the table view."></svg></div>
+      <div id="table-wrap"><table id="table"></table></div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <div id="party-key"></div>
+    <span id="key-note"></span>
+  </div>
+  <div id="tooltip"></div>
+
+  <footer class="page-credit">
+    Data:
+    <a href="https://github.com/unitedstates/congress-legislators" rel="noopener" target="_blank">unitedstates/congress-legislators</a>
+    (public domain), with missing birth dates from the
+    <a href="https://www.govinfo.gov/app/details/GPO-CDOC-108hdoc222" rel="noopener" target="_blank">Biographical Directory of the United States Congress</a>,
+    <a href="https://voteview.com/data" rel="noopener" target="_blank">Voteview</a> and
+    <a href="https://www.wikidata.org" rel="noopener" target="_blank">Wikidata</a> (CC0).
+    Source code, method notes and full citations:
+    <a href="https://github.com/ssitari/HouseAgeViz" rel="noopener" target="_blank">ssitari/HouseAgeViz</a>.
+  </footer>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
